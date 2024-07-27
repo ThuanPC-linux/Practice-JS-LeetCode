@@ -38,7 +38,7 @@
                             <h2>Example 1:</h2>
                             <div class="example__detail">
                                 <p><span>Input:</span> nums = [1,1,2,2,2,3]</p>
-                                <p><span>Output:</span> [1,1,2,2,2,3]</p>
+                                <p><span>Output:</span> [3,1,1,2,2,2]</p>
                                 <p><span>Explanation:</span> '3' has a frequency of 1, '1' has a frequency of 2, and '2' has a frequency of 3.</p>
                             </div>
                         </li>
@@ -77,9 +77,20 @@
                         </div>
 
                         <div class="code__js">
-                            var frequencySort = funtion(nums){
+                            let nums = [];
+                            <br><br>
+                            function frequencySort(nums){
                                 <br>
-                                <pre>   nums = 1,2,3;<br>   numbers=[];
+                                <pre>   const numsFrequencyMap = new Map();
+   for(let n of nums){
+       numsFrequencyMap.set(n, (numsFrequencyMap.get(n)||0)+1)
+   }
+   return nums.sort((a,b)=>{
+        if(numsFrequencyMap.get(a) == numsFrequencyMap.get(b)){
+            return b-a
+        }
+        return numsFrequencyMap.get(a) - numsFrequencyMap.get(b);
+   });
                                 </pre>
                             
                             };
@@ -93,16 +104,17 @@
 
                         <div class="export__result" id="export-result">
                             <span>Input:</span>
-                            <p class="in__result">nums = [1,1,2,2,2,3]</p>
+                            <p class="in__result" id="input-result">Input's result right here</p>
 
                             <span>Output:</span>
-                            <p class="out__result">nums = [1,1,2,2,2,3]</p>
+                            <p class="out__result" id="output-result">Onput's result right here</p>
                         </div>
-
-                        <div class="action__runcode">
-                            <input type="text" id="input-array">
-                            <button class="add__item" id="add-item">ADD INPUT</button>
-                        </div>
+                        
+                        <footer class="action__runcode">
+                            <p>Please enter at least 6 numbers, for each number entered press the ADD INPUT button</p>
+                            <input type="text" id="input-array" placeholder="Enter a number.">
+                            <button class="add__item" id="add-value">ADD INPUT</button>
+                        </footer>
                     </div>
                 </div>
 
