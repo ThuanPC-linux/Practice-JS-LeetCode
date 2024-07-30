@@ -116,7 +116,7 @@ ul{
 
 .code__js{
     margin-top: 3rem;
-    color: white;
+    color: rgb(254, 250, 0);
     padding: 10px;
     font-size: 20px;
 }
@@ -228,6 +228,7 @@ ul{
 .add__item:hover{
     background-color: rgb(25, 255, 25);
 }
+
 
 /* =====================FOOTER ICON====================== */
 .icon__programing{

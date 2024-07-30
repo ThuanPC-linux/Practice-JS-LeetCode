@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2</title>
+
+    <!--=============== BOXICON ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--======================  CSS ===========================-->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <main class="main">
+        <section class="card__homework">
+            <div class="card__content">
+                
+                <header class="description_words">
+                    <div class="head__title">
+                        <h3>Description homework to day <i class='bx bx-book-open'></i></h3>
+                    </div>
+
+                    <h1>Array Prototype Last</h1>
+
+                    <p>
+                        Write code that enhances all arrays such that you can call the array.last() 
+                        method on any array and it will return the last element.
+                        <br> If there are no elements in the array, it should return -1.
+                        
+                        <br><br>
+                    
+                        You may assume the array is the output of JSON.parse.
+                    </p>
+
+                    <ul class="example__des">
+                        <li>
+                            <h2>Example 1:</h2>
+                            <div class="example__detail">
+                                <p><span>Input:</span> nums = [null, {}, 3]</p>
+                                <p><span>Output:</span> 3</p>
+                                <p><span>Explanation:</span> Calling nums.last() should return the last element: 3.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h2>Example 2:</h2>
+                            <div class="example__detail">
+                                <p><span>Input:</span>  nums = []</p>
+                                <p><span>Output:</span> &#9; -1</p>
+                                <p><span>Explanation:</span> Because there are no elements, return -1.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <h2>Constraints:</h2>
+                            <div class="example__detail">
+                                <p>arr is a valid JSON array</p>
+                                <p>0 <= arr.length <= 1000</p>
+                            </div>
+                        </li>
+                    </ul>
+                </header>
+
+                <div class="decription__code">
+                    <div class="decription__js">
+                        <div class="head__title">
+                            <h3>Code JavaScripts <i class='bx bx-expand-horizontal'></i></h3>
+                        </div>
+
+                        <div class="code__js">
+                            let nums = [];
+                            <br><br>
+                            function numsLastFind(nums){
+                                <br>
+                                <pre>   if (nums.constructor == Array){
+        for(let i=0; i <= nums.length ;i++){
+            if (nums[i] == undefined)
+                return nums[i - 1];
+        }
+   }</pre>
+                            
+                            }
+                        </div>
+                    </div>
+
+                    <div class="export__code">
+                        <div class="head__title">
+                            <h3>Run Code JavaScripts <i class='bx bxs-edit-alt' ></i></h3>
+                        </div>
+
+                        <div class="export__result" id="export-result">
+                            <span>Input:</span>
+                            <p class="in__result" id="input-result">Input's result right here</p>
+
+                            <span>Output:</span>
+                            <p class="out__result" id="output-result">Onput's result right here</p>
+                        </div>
+                        
+                        <footer class="action__runcode">
+                            <p>For each value entered press the ADD INPUT button please!</p>
+                            <input type="text" id="input-array" placeholder="Enter any value.">
+                            <button class="add__item" id="add-value">ADD INPUT</button>
+                        </footer>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="icon__programing">
+        <i style="color: rgb(255, 136, 0);" class='bx bxl-html5'></i>
+        <i style="color: rgb(0, 119, 255);" class='bx bxl-css3' ></i>
+        <i style="color: rgb(246, 255, 0);" class='bx bxl-javascript'></i>
+        <i style="color: rgb(176, 253, 83);" class='bx bxl-nodejs'></i>
+        <i style="color: rgb(0, 168, 0);" class='bx bxl-vuejs' ></i>
+        <i style="color: rgb(33, 203, 255);" class='bx bxl-react' ></i>
+        <i style="color: rgb(255, 17, 0);" class='bx bxl-angular'></i>
+        <i style="color: rgb(0, 119, 255);" class='bx bxl-typescript' ></i>
+        <i style="color: rgb(252, 255, 255);" class='bx bxl-wordpress' ></i>
+        <i style="color: rgb(162, 0, 255);" class='bx bxl-php' ></i>
+        <i style="color: rgb(2, 178, 197);" class='bx bxl-postgresql'></i>
+        <i style="color: rgb(113, 197, 2);" class='bx bxl-mongodb'></i>
+        <i style="color: rgb(255, 77, 0);" class='bx bxl-git'></i>
+        <i style="color: rgb(239, 239, 239);" class='bx bxl-github'></i>
+        <i style="color: rgb(0, 255, 200);" class='bx bxl-docker'></i>
+    </footer>
+
+
+    <!--==================  JavaScripts =======================-->
+    <script src="main.js"></script>
+</body>
+</html>
