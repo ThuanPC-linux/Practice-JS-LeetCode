@@ -1,0 +1,245 @@
+/*========================  ADD FONTS   =============================*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root{
+    --title-color: rgb(245, 244, 244);
+    --font-text: "Ubuntu", sans-serif;
+}
+
+body{
+    background-image: url(/bg-AngularJS.jpg);
+    background-size: cover;
+    font-family: var(--font-text);
+}
+
+ul{
+    list-style-type: none;
+}
+
+.main{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ================== Main Card ===================== */
+
+/* =====Card Sum===== */
+.card__homework{
+    display: flex;
+    margin-top: 1.5rem;
+    padding: 2rem;
+    background-color: transparent;
+    width: 100rem;
+    min-height: 1000px;
+    transition: .3s;
+}
+
+/* =====Card Content===== */
+.card__content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+/* Description for words -- Left*/
+.description_words{
+    width: 100%;
+    border: 2px solid rgb(255, 132, 0);
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    position: relative;
+}
+
+.head__title{
+    border-radius: 17px 17px 0px 0px;
+    background-color: rgba(255, 255, 255);
+    width: 100%;
+    position: absolute;
+        top: 0;
+        left: 0;
+    color: black;
+}
+
+.head__title h3{
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.description_words h1{
+    margin-top: 3rem;
+}
+
+.description_words p{
+    margin-left: 1rem;
+}
+
+.example__detail{
+    width: 35rem;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    border-left: 2px solid rgb(255, 217, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.example__detail p {
+    position: relative;
+    top: 0px;
+}
+
+.example__detail p span{
+    font-weight: bold;
+}
+
+/* Description & run code JS -- Right SUM*/
+.decription__code{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* Description & run code JS -- Right Top*/
+.decription__js{
+    width: 100%;
+    height: 50%;
+    border: 2px solid rgb(0, 255, 229);
+    border-radius: 20px;
+    position: relative;
+}
+
+.code__js{
+    margin-top: 3rem;
+    color: rgb(254, 250, 0);
+    padding: 10px;
+    font-size: 20px;
+}
+
+/* Description & run code JS -- Right Bottom*/
+.export__code{
+    width: 100%;
+    height: 50%;
+    border: 2px solid rgb(119, 0, 255);
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    color: white;
+}
+
+.export__result{
+    width: 90%;
+    min-height: 160px;
+    padding: 20px;
+    margin-top: 3rem;
+    margin-left: 1.2rem;
+    background-color: rgb(70, 69, 69);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.export__result p{
+    max-width: 100%;
+    height: 3rem;
+    font-size: 25px;
+    background-color: black;
+    position: absolute;
+    right: 2rem;
+    padding-top: 17px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.in__result{
+    top: -2px;
+}
+
+.out__result{
+    top: 5.5rem;
+}
+
+.export__result span{
+    font-weight: 1000;
+    font-size: 25px;
+    position: relative;
+    left: 3rem;
+    top: -45px;
+    margin-top: 4rem;
+}
+
+.action__runcode{
+    width: 100%;
+    min-height: 100px;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action__runcode p{
+    width: 30%;
+}
+
+.action__runcode input{
+    outline: none;
+    border: none;
+    width: 35%;
+    max-height: 50px;
+    font-size: 30px;
+    color: whitesmoke;
+
+
+    background-color: transparent;
+    border: 2px solid rgb(255, 0, 43);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.add__item{
+    outline: none;
+    border: none;
+    width: 20%;
+    max-height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    color: whitesmoke;
+    transition: .5s;
+
+    background-color: transparent;
+    border: 2px solid rgb(255, 221, 0);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 22px;
+}
+
+.add__item:hover{
+    background-color: rgb(25, 255, 25);
+}
+
+
+/* =====================FOOTER ICON====================== */
+.icon__programing{
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.icon__programing i{
+    font-size: 70px;
+}

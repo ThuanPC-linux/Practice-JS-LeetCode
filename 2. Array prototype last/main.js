@@ -7,6 +7,9 @@ let addInputValue = document.getElementById('add-value');
 let nums = [];
 
 
+checkNums(nums);
+
+
 addInputValue.addEventListener('click',pushNums)
 
 function numsLastFind(nums){
@@ -52,10 +55,18 @@ function changeData(valueChange){
     }
 }
 
+function checkNums(nums){
+    if (nums.length == 0 || nums == undefined){
+        const numDefault = `[${-1}]`;
+        pOutputResult.innerText = numDefault;
+    }
+}
 
 function pushNums(){
     const valueFill = inputUser.value;
     let valueReal;
+
+    
 
     if(valueFill){
         valueReal = changeData(valueFill);
